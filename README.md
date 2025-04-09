@@ -15,11 +15,22 @@ A proposta envolvia simular o funcionamento de um sistema básico para uma empre
 
 ## 📦 Estrutura do Projeto
 
-project/ │-- src/ │ ├── controllers/ │ │ ├── userController.js │ │ ├── projectController.js │ │ ├── taskController.js │ ├── models/ │ │ ├── user.js │ │ ├── project.js │ │ ├── task.js │ ├── server.js │-- package.json
+project/
+│-- src/
+│   ├── controllers/
+│   │   ├── userController.js
+│   │   ├── projectController.js
+│   │   ├── taskController.js
+│   ├── models/
+│   │   ├── user.js
+│   │   ├── project.js
+│   │   ├── task.js
+│   ├── server.js
+│-- package.json
 
 ## 🔗 Relacionamentos
 
-![MER](https://raw.githubusercontent.com/ATalDaAiume/Aulinha-Jackson-Prova-1/main/thumbnail.png)
+![MER](https://i.postimg.cc/JhTyjFbV/thumbnail.png)
 
 - Um **usuário** pode estar vinculado a várias tarefas.
 - Um **projeto** pode conter várias tarefas.
