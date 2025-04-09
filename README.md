@@ -15,18 +15,7 @@ A proposta envolvia simular o funcionamento de um sistema básico para uma empre
 
 ## 📦 Estrutura do Projeto
 
-project/
-│-- src/
-│   ├── controllers/
-│   │   ├── userController.js
-│   │   ├── projectController.js
-│   │   ├── taskController.js
-│   ├── models/
-│   │   ├── user.js
-│   │   ├── project.js
-│   │   ├── task.js
-│   ├── server.js
-│-- package.json
+📦 project ├── 📂 src │ ├── 📂 controllers │ │ ├── 👤 userController.js │ │ ├── 📁 projectController.js │ │ └── ✅ taskController.js │ ├── 📂 models │ │ ├── 👤 user.js │ │ ├── 📁 project.js │ │ └── ✅ task.js │ └── 🚀 server.js ├── 📦 package.json
 
 ## 🔗 Relacionamentos
 
