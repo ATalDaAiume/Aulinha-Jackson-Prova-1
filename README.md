@@ -1,8 +1,11 @@
 ![Atividade Avaliativa](https://img.shields.io/badge/atividade%20avaliativa-node.js-blueviolet)
 
 # 🧩 Gerenciador de Projetos - API REST (Node.js)
+> Atividade Avaliativa – Backend | 3º Semestre ADS
 
-Este projeto foi desenvolvido como parte da **Atividade Avaliativa 1** da disciplina de backend, com o objetivo de consolidar os aprendizados sobre **Node.js**, **arquitetura MVC** e **construção de APIs REST** com armazenamento em memória (arrays).
+Repositório referente à primeira **Atividade Avaliativa** da disciplina de backend da faculdade, com o objetivo de consolidar os aprendizados sobre **Node.js**, **arquitetura MVC** e **construção de APIs REST** com armazenamento em memória (arrays).
+
+Essa atividade foi essencial para entender a separação de responsabilidades, estrutura de um projeto real e a manipulação de dados por meio de rotas organizadas.
 
 ## 🧠 Objetivo
 
@@ -11,11 +14,33 @@ Criar uma API para o gerenciamento de:
 - **Projetos**
 - **Tarefas**
 
-A proposta envolvia simular o funcionamento de um sistema básico para uma empresa fictícia, relacionando usuários e tarefas a projetos.
+Foi proposta uma API para gerenciamento de projetos, tarefas e usuários, com as seguintes entidades:
+
+- 👤 **Usuário**  
+  `id`, `nome`, `email`, `senha`
+
+- 📁 **Projeto**  
+  `id`, `nome`, `descrição`
+
+- ✅ **Tarefa**  
+  `id`, `título`, `status`, `id do projeto`, `id do usuário responsável`
 
 ## 📦 Estrutura do Projeto
 
-<pre> ## 📁 Estrutura do Projeto ``` project/ ├── src/ │ ├── controllers/ │ │ ├── userController.js │ │ ├── projectController.js │ │ └── taskController.js │ ├── models/ │ │ ├── user.js │ │ ├── project.js │ │ └── task.js │ └── server.js ├── package.json ``` </pre>
+```
+📁 project
+├── 📂 src
+│   ├── 📂 controllers
+│   │   ├── 👤 userController.js
+│   │   ├── 📁 projectController.js
+│   │   └── ✅ taskController.js
+│   ├── 📂 models
+│   │   ├── 👤 user.js
+│   │   ├── 📁 project.js
+│   │   └── ✅ task.js
+│   └── 🚀 server.js
+├── 📦 package.json
+```
 
 ## 🔗 Relacionamentos
 
@@ -25,25 +50,16 @@ A proposta envolvia simular o funcionamento de um sistema básico para uma empre
 - Um **projeto** pode conter várias tarefas.
 - Cada **tarefa** pertence a **um projeto** e é atribuída a **um único usuário**.
 
-## 🎯 Endpoints
+## 🚀 Funcionalidades da API
 
-### Usuários `/api/users`
-- `POST` Criar usuário
-- `GET` Listar usuários
-- `PUT` Atualizar nome do usuário
-- `DELETE` Remover usuário
+- **Usuários (/api/users)**  
+  ➕ Criar, 🔍 Listar, ✏️ Atualizar nome, ❌ Remover
 
-### Projetos `/api/projects`
-- `POST` Criar projeto
-- `GET` Listar projetos
-- `PUT` Atualizar nome e descrição
-- `DELETE` Remover projeto
+- **Projetos (/api/projects)**  
+  ➕ Criar, 🔍 Listar, ✏️ Atualizar nome/descrição, ❌ Remover
 
-### Tarefas `/api/tasks`
-- `POST` Criar tarefa (vinculada a projeto e usuário)
-- `GET` Listar tarefas
-- `PUT` Atualizar título ou status
-- `DELETE` Remover tarefa
+- **Tarefas (/api/tasks)**  
+  ➕ Criar (com relação a projeto e usuário), 🔍 Listar, ✏️ Atualizar título/status, ❌ Remover
 
 ## 🚀 Tecnologias Utilizadas
 
