@@ -61,7 +61,7 @@ Foi proposta uma API para gerenciamento de projetos, tarefas e usuários, com as
 - **Tarefas (/api/tasks)**  
   ➕ Criar (com relação a projeto e usuário), 🔍 Listar, ✏️ Atualizar título/status, ❌ Remover
 
-## 🚀 Tecnologias Utilizadas
+## 🛠️ Tecnologias Utilizadas
 
 - **Node.js**
 - **Express.js**
